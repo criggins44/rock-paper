@@ -25,7 +25,18 @@ function playerTurn(input){
 	let computerChoice = choices[num];
 
 	document.getElementById('playerChoice').innerHTML = 'You: ' + input.toUpperCase();
-	document.getElementById('computerChoice').innerHTML = 'CPU: ' + input.toUpperCase();
+	document.getElementById('computerChoice').innerHTML = 'CPU: ' + choices[num].toUpperCase();
+
+	switch(choicesObject[input][computerChoice]){
+		case 'win':
+			victory.innerHTML = 'Winner: YOU';
+			break;
+		case 'lose':
+			victory.innerHTML = 'Winner: CPU';
+			break;
+		case 'draw':
+			victory.innerHTML = 'Winner: DRAW';
+	}
 }
 
 
