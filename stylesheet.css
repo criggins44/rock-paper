@@ -1,0 +1,15 @@
+h1{
+	text-align: center;
+}
+#displayBox{
+	border: 2px solid blue;
+	width: 40%;
+	display: grid;
+	justify-content: center;
+	font-size: 30px;
+}
+#btnBox{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
